@@ -1,0 +1,65 @@
+body {
+    background-color: #f0f8ff; /* Color de fondo */
+    color: #333; /* Color del texto */
+    font-family: 'Times New Roman', Times, serif; /* Tipo de fuente */
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 250vh; /* 100% del alto de la ventana */
+   
+}
+
+.paper {
+    background: #fff; /* Color de fondo del papel */
+    padding: 40px; /* Espacio dentro del papel */
+    border-radius: 25px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 80%; /* Ancho del papel */
+    max-width: 760px; /* Ancho máximo del papel */
+    text-align: center; /* Alinear contenido al centro */
+    margin: 50px; /* Márgenes alrededor del papel */
+    border-color: darkred;
+}
+
+.letter {
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+.letter h1 {
+    font-size: 2.5em; /* Tamaño de fuente del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #ff145a; /* Color rosa para el título */
+}
+
+.letter p {
+    font-size: 1.2em; /* Tamaño de fuente del texto */
+    margin-bottom: 15px; /* Espacio debajo de cada párrafo */
+}
+
+.letter p:last-child {
+    margin-bottom: 0; /* Eliminar espacio debajo del último párrafo */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .paper {
+        width: 75%; /* Ancho del papel en pantallas pequeñas */
+        padding: 50px; /* Espacio dentro del papel en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .paper {
+        width: 50%; /* Ancho del papel en pantallas muy pequeñas */
+        padding: 50px; /* Espacio dentro del papel en pantallas muy pequeñas */
+    }
+
+    .letter h1 {
+        font-size: 2em; /* Tamaño de fuente del título en pantallas muy pequeñas */
+    }
+
+    .letter p {
+        font-size: 1em; /* Tamaño de fuente del texto en pantallas muy pequeñas */
+    }
+}
